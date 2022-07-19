@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>CIP CD Puno</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+
+
+    <style>
+      #cards1 {
+          font-family: 'Oxygen', sans-serif;
+      }
+      .navbar {
+            overflow: hidden;
+            background-color: rgb(252, 248, 248);
+            font-family: Arial;
+            }
+
+            /* Links inside the navbar */
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            }
+
+            /* The dropdown container */
+            .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            color: rgb(8, 0, 0);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+            }
+
+            /* Add a red background color to navbar links on hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #b91c1c;
+            color: rgb(255, 255, 255);
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+            background-color: #b91c1c;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+  </style>
+<body>
+    <!-- menu general-->
+    <nav class="bg-slate-700 border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-5">
+            <a href="inicio" class="flex items-center">
+                <img src="../images/portada/logocip2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-white text-xl font-semibold whitespace-nowrap dark:text-white">CIP CD PUNO</span>
+            </a>
+            <div class="flex items-center">
+                <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-50 dark:text-white hover:underline"><i
+                    class="lg:text-gray-300 text-gray-500 fa-solid fa-phone text-lg leading-lg mr-2"
+                  ></i>(051) 368694</a>
+                  <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-50 dark:text-white hover:underline"><i
+                    class="lg:text-gray-300 text-gray-500 fa-solid fa-location-dot text-lg leading-lg mr-2"
+                  ></i>JR. MARIANO H. CORNEJO 1304</a>
+                  <button
+                  class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  type="button"
+                  style="transition: all 0.15s ease 0s;"
+                >
+                  <i class="fas fa-arrow-alt-circle-down"></i> Ingresar
+                </button>
+                
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-gray-50 dark:bg-gray-700 ">
+        <div class="max-w-screen-xl px-4 mx-auto md:px-6">
+            <div class="flex items-center navbar">
+                <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium py-3">
+                    <li>
+                        <a href="../" class="text-gray-900 dark:text-white py-2 px-3 hover:text-white hover:bg-red-700 " aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Institucional
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada1">Reseña histórica</a>
+                              <a href="portada2">Mision y Visión</a>
+                              <a href="#">Documentos normativos</a>
+                              <a href="#">Comision electoral departamental</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Representantes
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada3">Consejo departamental</a>
+                              <a href="portada4">Asamblea departamental</a>
+                              <a href="portada5">Comite provicial San Román</a>
+                              <a href="#">Capitulos</a>
+                              <a href="portada6">Decanos pasados</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Tramites
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada7">Tramite colegiatura ordinaria</a>
+                              <a href="portada8">Certificado habilidad</a>
+                              <a href="../login">Busqueda colegiado</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Servicios
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="../login">Cip Virtual</a>
+                              <a href="portada10">ISS Instituto de servicios sociales</a>
+                              <a href="portada11">Alquile ambientes del cip</a>
+                              <a href="portada12">Club del ingeniero</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Institucional
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Eventos pasados</a>
+                              <a href="#">Noticias</a>
+                              <a href="#">Bolsa de trabajo</a>
+                              <a href="#">Videos</a>
+                              <a href="#">Galeria fotos</a>
+                              <a href="#">Ceremonias</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>    
+                        <a href="#" class="text-gray-900 dark:text-white py-2 px-3 hover:text-white hover:bg-red-700 ">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+<!-- Direccion de pag -->
+  </div>
+  <div class="bg-slate-700">
+  <div class="container mx-auto py-3 px-12 bg-slate-700">
+      
+      <a class="mr-5 font-semibold text-white hover:text-gray-900" href="">Inicio</a><i class="fa-solid fa-arrow-right-long text-white mr-5"></i><a class="mr-5 font-semibold text-white hover:text-gray-900" href="">Tramite</a><i class="fa-solid fa-arrow-right-long text-white mr-5"></i> <a class="mr-5 font-semibold text-white">Tramite colegiatura ordinaria</a>
+
+  </div>
+  </div>
+<!-- Espacio en blanco -->
+    <div class=" mx-auto py-5 px-12 bg-gray-300">
+
+    </div>
+    <!-- Contenido -->
+    <div class="bg-gray-300">
+        <div class="container bg-white rounded-lg py-16 px-8 mx-auto">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <div class="p-4">
+                    <label for="table-search" class="sr-only">Search</label>
+                    <div class="relative mt-1">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            
+                        </div>
+                        <button class="text-center relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-gray-300 to-gray-900 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                            <span class="text-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                MIEMBROS ASAMBLEA DEPARTAMENTAL CIP-PUNO 2022 – 2024    
+                            </span>
+                        </button>
+        
+                        </div>
+                    </div>
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-white uppercase bg-gray-900 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    NOMBRES Y APELLIDOS
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    N° CIP
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    ESPECIALIDAD
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Zenón Mellado Vargas
+                                </th>
+                                <td class="px-6 py-4">
+                                    27028
+                                </td>
+                                <td class="px-6 py-4">
+                                    Civil
+                                </td>
+                               
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Bonifacio Chambi Apaza
+                                </th>
+                                <td class="px-6 py-4">
+                                    55695
+                                </td>
+                                <td class="px-6 py-4">
+                                    Agrónomo
+                                </td>
+                                
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Félix Olaguivel Loza
+                                </th>
+                                <td class="px-6 py-4">
+                                    31655
+                                </td>
+                                <td class="px-6 py-4">
+                                    Economista
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Victor Raúl Ramos Gómez
+                                </th>
+                                <td class="px-6 py-4">
+                                    90567
+                                </td>
+                                <td class="px-6 py-4">
+                                    Mecánico Electricista
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Elmer Coyla Idme
+                                </th>
+                                <td class="px-6 py-4">
+                                    61855
+                                </td>
+                                <td class="px-6 py-4">
+                                    Sistemas
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Percy Arturo Ginez Choque
+                                </th>
+                                <td class="px-6 py-4">
+                                    54418
+                                </td>
+                                <td class="px-6 py-4">
+                                    Agrícola
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Ángel Ubaldo Acero Taiña
+                                </th>
+                                <td class="px-6 py-4">
+                                    101592
+                                </td>
+                                <td class="px-6 py-4">
+                                    Minas
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Alejandro Apaza Tarqui
+                                </th>
+                                <td class="px-6 py-4">
+                                    48099
+                                </td>
+                                <td class="px-6 py-4">
+                                    Estadística y Sistemas
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Germán Fermín Godoy Ruelas
+                                </th>
+                                <td class="px-6 py-4">
+                                    104292
+                                </td>
+                                <td class="px-6 py-4">
+                                    Agroindustrial
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Leonel Palomino Ascencio
+                                </th>
+                                <td class="px-6 py-4">
+                                    42435
+                                </td>
+                                <td class="px-6 py-4">
+                                    Geólogo
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Alfredo Abraham Bartolo León
+                                </th>
+                                <td class="px-6 py-4">
+                                    84457
+                                </td>
+                                <td class="px-6 py-4">
+                                    Químico
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Porfirio Ulíses Hurtado Chávez
+                                </th>
+                                <td class="px-6 py-4">
+                                    72121
+                                </td>
+                                <td class="px-6 py-4">
+                                    Electricista
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Marco Eddy Quiroz Coaquira
+                                </th>
+                                <td class="px-6 py-4">
+                                    99102
+                                </td>
+                                <td class="px-6 py-4">
+                                    Civil
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Éudes Rigoberto Apaza Estaño
+                                </th>
+                                <td class="px-6 py-4">
+                                    58258
+                                </td>
+                                <td class="px-6 py-4">
+                                    Electrónico
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. José Luis Bruna Sucasaca
+                                </th>
+                                <td class="px-6 py-4">
+                                    124010
+                                </td>
+                                <td class="px-6 py-4">
+                                    Metalurgista
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Dawes Ramos Alata
+                                </th>
+                                <td class="px-6 py-4">
+                                    62014
+                                </td>
+                                <td class="px-6 py-4">
+                                    Agrónomo
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Rodolfo Fredy Arpasi Chura
+                                </th>
+                                <td class="px-6 py-4">
+                                    61943
+                                </td>
+                                <td class="px-6 py-4">
+                                    Sistemas
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Edwin Vilca Coila
+                                </th>
+                                <td class="px-6 py-4">
+                                    67583
+                                </td>
+                                <td class="px-6 py-4">
+                                    Agrónomo
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-red-100 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Donny Silvestre Mendoza Monroy
+                                </th>
+                                <td class="px-6 py-4">
+                                    101541
+                                </td>
+                                <td class="px-6 py-4">
+                                    Economista
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                    Ing. Verardo Marcelo H. Mestas Vilca
+                                </th>
+                                <td class="px-6 py-4">
+                                    64014
+                                </td>
+                                <td class="px-6 py-4">
+                                    Civil
+                                </td>
+                                
+                            </tr>
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="py-12 px-12 bg-gray-300">
+
+    </div>
+
+
+     <!-- Barra baja general -->
+
+     <footer class="relative bg-neutral-900 pt-8 pb-6">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 text-gray-200">
+          <div class="flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4">
+              <h4 class="text-3xl font-semibold">Ubícanos</h4>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200 py-1">
+                <i class="lg:text-white text-white fa-solid fa-location-dot text-lg leading-lg mr-2"></i>Jr. Mariano H. Cornejo N° 130 - Puno
+              </h5>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200">
+                <i class="lg:text-gray-300 text-gray-500 fa-solid fa-calendar-days text-lg leading-lg mr-2"></i>Lunes a Viernes: 9:00 am - 1:00 pm | 2:00 pm - 6:00 pm
+              </h5>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200">
+                Sábados: 9:00 am – 12:00 pm
+              </h5>
+              <div class="mt-6">
+                <button
+                  class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-twitter"></i></button
+                ><button
+                  class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-facebook-square"></i></button
+                ><button
+                  class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-dribbble"></i></button
+                ><button
+                  class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full lg:w-4/12 px-4 ml-auto">
+                  <span
+                    class="block uppercase text-gray-200 text-sm font-semibold mb-2"
+                    >Contáctanos</span
+                  >
+                  <ul class="list-unstyled">
+                    <a>Administración</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation"
+                        >@cipcdpuno.adm@gmail.com</a
+                      >
+                    </li>
+                    <a>Secretaria</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://blog.creative-tim.com"
+                        >@secretaria.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                    <a>Tesorería</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.github.com/creativetimofficial"
+                        >@tesoreria.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                    <a>Colegiatura</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/bootstrap-themes/free"
+                        >@colegiatura.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-400" />
+          <div
+            class="flex flex-wrap items-center md:justify-between justify-center"
+          >
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-gray-200 font-semibold py-1">
+                © 2022 Todos los derechos reservados
+                <a>
+                Colegio de Ingenieros del Perú - Consejo Departamental Puno</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+
+</html>

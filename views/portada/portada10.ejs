@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>CIP CD Puno</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+
+
+    <style>
+      #cards1 {
+          font-family: 'Oxygen', sans-serif;
+      }
+      .navbar {
+            overflow: hidden;
+            background-color: rgb(252, 248, 248);
+            font-family: Arial;
+            }
+
+            /* Links inside the navbar */
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            }
+
+            /* The dropdown container */
+            .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            color: rgb(8, 0, 0);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+            }
+
+            /* Add a red background color to navbar links on hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #b91c1c;
+            color: rgb(255, 255, 255);
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+            background-color: #b91c1c;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+  </style>
+<body>
+    <!-- menu general-->
+    <nav class="bg-slate-700 border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-5">
+            <a href="inicio" class="flex items-center">
+                <img src="../images/portada/logocip2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-white text-xl font-semibold whitespace-nowrap dark:text-white">CIP CD PUNO</span>
+            </a>
+            <div class="flex items-center">
+                <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-50 dark:text-white hover:underline"><i
+                    class="lg:text-gray-300 text-gray-500 fa-solid fa-phone text-lg leading-lg mr-2"
+                  ></i>(051) 368694</a>
+                  <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-50 dark:text-white hover:underline"><i
+                    class="lg:text-gray-300 text-gray-500 fa-solid fa-location-dot text-lg leading-lg mr-2"
+                  ></i>JR. MARIANO H. CORNEJO 1304</a>
+                  <button
+                  class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  type="button"
+                  style="transition: all 0.15s ease 0s;"
+                >
+                  <i class="fas fa-arrow-alt-circle-down"></i> Ingresar
+                </button>
+                
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-gray-50 dark:bg-gray-700 ">
+        <div class="max-w-screen-xl px-4 mx-auto md:px-6">
+            <div class="flex items-center navbar">
+                <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium py-3">
+                    <li>
+                        <a href="../" class="text-gray-900 dark:text-white py-2 px-3 hover:text-white hover:bg-red-700 " aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Institucional
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada1">Reseña histórica</a>
+                              <a href="portada2">Mision y Visión</a>
+                              <a href="#">Documentos normativos</a>
+                              <a href="#">Comision electoral departamental</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Representantes
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada3">Consejo departamental</a>
+                              <a href="portada4">Asamblea departamental</a>
+                              <a href="portada5">Comite provicial San Román</a>
+                              <a href="#">Capitulos</a>
+                              <a href="portada6">Decanos pasados</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Tramites
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada7">Tramite colegiatura ordinaria</a>
+                              <a href="portada8">Certificado habilidad</a>
+                              <a href="../login">Busqueda colegiado</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Servicios
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="../login">Cip Virtual</a>
+                              <a href="portada10">ISS Instituto de servicios sociales</a>
+                              <a href="portada11">Alquile ambientes del cip</a>
+                              <a href="portada12">Club del ingeniero</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Institucional
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Eventos pasados</a>
+                              <a href="#">Noticias</a>
+                              <a href="#">Bolsa de trabajo</a>
+                              <a href="#">Videos</a>
+                              <a href="#">Galeria fotos</a>
+                              <a href="#">Ceremonias</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>    
+                        <a href="#" class="text-gray-900 dark:text-white py-2 px-3 hover:text-white hover:bg-red-700 ">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+<!-- Direccion de pag -->
+  </div>
+  <div class="bg-slate-700">
+  <div class="container mx-auto py-3 px-12 bg-slate-700">
+      
+      <a class="mr-5 font-semibold text-white hover:text-gray-900" href="">Inicio</a><i class="fa-solid fa-arrow-right-long text-white mr-5"></i><a class="mr-5 font-semibold text-white hover:text-gray-900" href="">Tramite</a><i class="fa-solid fa-arrow-right-long text-white mr-5"></i> <a class="mr-5 font-semibold text-white">Tramite colegiatura ordinaria</a>
+
+  </div>
+  </div>
+<!-- Espacio en blanco -->
+    <div class=" mx-auto py-5 px-12 bg-gray-300">
+
+    </div>
+<!-- Contenido -->
+    <div class="bg-gray-300">
+        <div class="bg-white container mx-auto py-10 px-10 rounded-lg">
+            
+
+
+
+
+            <div>
+                <!-- Section: Design Block -->
+                <section class="">
+                  
+              
+                  <div class="px-6 lg:my-12 md:px-12 text-gray-800 text-center lg:text-left">
+                    <div class="container mx-auto xl:px-32">
+                      <div class="grid pb-10 lg:grid-cols-2 gap-12 flex items-center">
+                        <div class="mt-12 lg:mt-10">
+                          <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mt-20 mb-10 text-black">Alquiler Ambientes del CIP Puno </h1>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- Section: Design Block -->
+              
+              </div>
+              <!-- Contai -->
+              
+            
+              <!-- Section: information-->
+                
+              <div class="container  px-6 mx-auto">
+            
+                <!-- Section: Design Block -->
+                <section class=" text-gray-800  ">
+                  
+                  <div class="flex flex-wrap mb-12  ">
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 pb-15 ">
+                      <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg "
+                        style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                        <img src="../images/portada/alquiler/img9.webp" class="w-full" alt="Louvre" />
+                        <a href="#!">
+                          <div
+                            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                    </div>
+              
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 ">
+                    
+                      <div class="text-red-300 text-sm mb-4 flex items-center font-medium h-12 w-34">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 h-4 mr-2">
+                          <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                          <path fill="currentColor"
+                            d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm160 215.5v6.93c0 5.87-3.32 11.24-8.57 13.86l-15.39 7.7a15.485 15.485 0 0 1-15.53-.97l-18.21-12.14a15.52 15.52 0 0 0-13.5-1.81l-2.65.88c-9.7 3.23-13.66 14.79-7.99 23.3l13.24 19.86c2.87 4.31 7.71 6.9 12.89 6.9h8.21c8.56 0 15.5 6.94 15.5 15.5v11.34c0 3.35-1.09 6.62-3.1 9.3l-18.74 24.98c-1.42 1.9-2.39 4.1-2.83 6.43l-4.3 22.83c-.62 3.29-2.29 6.29-4.76 8.56a159.608 159.608 0 0 0-25 29.16l-13.03 19.55a27.756 27.756 0 0 1-23.09 12.36c-10.51 0-20.12-5.94-24.82-15.34a78.902 78.902 0 0 1-8.33-35.29V367.5c0-8.56-6.94-15.5-15.5-15.5h-25.88c-14.49 0-28.38-5.76-38.63-16a54.659 54.659 0 0 1-16-38.63v-14.06c0-17.19 8.1-33.38 21.85-43.7l27.58-20.69a54.663 54.663 0 0 1 32.78-10.93h.89c8.48 0 16.85 1.97 24.43 5.77l14.72 7.36c3.68 1.84 7.93 2.14 11.83.84l47.31-15.77c6.33-2.11 10.6-8.03 10.6-14.7 0-8.56-6.94-15.5-15.5-15.5h-10.09c-4.11 0-8.05-1.63-10.96-4.54l-6.92-6.92a15.493 15.493 0 0 0-10.96-4.54H199.5c-8.56 0-15.5-6.94-15.5-15.5v-4.4c0-7.11 4.84-13.31 11.74-15.04l14.45-3.61c3.74-.94 7-3.23 9.14-6.44l8.08-12.11c2.87-4.31 7.71-6.9 12.89-6.9h24.21c8.56 0 15.5-6.94 15.5-15.5v-21.7C359.23 71.63 422.86 131.02 441.93 208H423.5c-8.56 0-15.5 6.94-15.5 15.5z" />
+                        </svg>
+                        AA-CIP
+                      </div>
+                     
+                      <p class="text-gray-500 ">
+                        El Congreso Departamental Puno cuenta con ambientes cómodos y adecuados que le harán sentirse a gusto en cada reunión. Además le ofrecemos todas las comodidades y facilidades en cuanto a servicios e infraestructura para garantizar el éxito de su evento proyectado.
+                        Nuestros ambientes están equipados para brindar mayores comodidades al participante, al ponente y al desarrollo del evento para el éxito del mismo. Contamos con un Auditórium con una capacidad de 50 personas, debidamente equipado, para ser usado como aula o auditórium.
+                      </p>
+                    </div>
+                  </div>
+              
+                  <div class="flex flex-wrap lg:flex-row-reverse mb-12 ">
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+                      <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+                        style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                        <img src="../images/portada/alquiler/img5.webp" class="w-full" alt="Louvre" />
+                        <a href="#!">
+                          <div
+                            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                    </div>
+              
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 ">
+                      <h3 class="text-2xl font-bold mb-2 ">ALQUILER DE LOCAL PARA EVENTOS ESPECIALES – PRIMER PISO (PUNO)</h3>
+                      <div class="text-red-600 text-sm mb-4 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        INCLUYE:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Entrada Principal
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Servicios Higiénicos
+                      </p>  
+                      
+                      <div class="text-green-700 text-sm mb-2 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        COSTOS:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Ingenieros habilitados: S/ 900.00
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Ingenieros colegiados: S/ 1100.00
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Externos: S/ 1300.00
+            
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> 
+                        Limpieza: S/ 50.00
+                      </p> 
+            
+            
+                     <div class="text-center mt-2">
+                      <button class="bg-yellow-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                        
+                        <a href="https://drive.google.com/uc?export=download&amp;id=1b_XOe3_Cz7OIQ0CHl1XsB7OSLw8-zVLJ" target="_blank"
+                    class="btn btn-danger btn-lg" role="button" rel="noopener noreferrer">Adquirir<i class="fa fa-external-link"></i></a>
+                      </button>
+                       
+                    </div>
+                    </div>
+                  </div>
+              
+                  <div class="flex flex-wrap">
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+                      <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+                        style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                        <img src="../images/portada/alquiler/img6.webp" class="w-full" alt="" />
+                        <a href="#!">
+                          <div
+                            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                        </div>
+            
+                       
+                    </div>
+              
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
+                      <h3 class="text-2xl font-bold mb-4">ALQUILER DE LOCAL PARA EVENTOS ACADÉMICOS – PRIMER PISO (PUNO).</h3>
+                      <div class="text-red-600 text-sm mb-4 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        INCLUYE:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> 90 sillas
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Mesas de escritorio (a tratar el costo)
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Atril
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Proyector multimedia
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Un micrófono
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Internet
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Equipo de Sonido
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Servicios Higiénicos
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Capacidad máxima para 150 personas
+                      </p> 
+                      
+                      <div class="text-green-700 text-sm mb-2 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        COSTOS:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Ingenieros habilitados: S/ 200.00
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Ingenieros colegiados: S/ 250.00
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Externos: S/ 300.00
+                      </p> 
+                    
+                      <div class="text-center m-2">
+                        <button class="bg-yellow-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                          <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                          
+                          <a href="https://drive.google.com/uc?export=download&amp;id=1b_XOe3_Cz7OIQ0CHl1XsB7OSLw8-zVLJ" target="_blank"
+                      class="btn btn-danger btn-lg" role="button" rel="noopener noreferrer">Adquirir<i class="fa fa-external-link"></i></a>
+                        </button>
+                         
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </section>
+            
+                <section class=" text-gray-800  ">
+                  
+                  <div class="flex flex-wrap lg:flex-row-reverse mb-12 mt-10 ">
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+                      <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+                        style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                        <img src="../images/portada/alquiler/img6.webp" class="w-full" alt="Louvre" />
+                        <a href="#!">
+                          <div
+                            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                    </div>
+              
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 ">
+                      <h3 class="text-2xl font-bold mb-2 ">ALQUILER DE AUDITORIO No. 01- SEGUNDO PISO (PUNO).</h3>
+                      <div class="text-red-600 text-sm mb-4 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        INCLUYE:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>130 sillas (movibles)
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Mesa de Honor con 8 sillas
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Equipo multimedia (Proyector y Ecran automático)
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Pizarra acrílica
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Podio
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Micrófono inalámbrico
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Un micrófono
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Sistema de sonido
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> 2 mesas rectangulares (para atención break)
+                      </p> 
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Internet (Wifi)
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Servicios higiénicos para damas y caballeros
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Capacidad máxima para 150 personas
+                      </p> 
+                      
+                      <div class="text-green-700 text-sm mb-2 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        COSTOS:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Ingenieros habilitados: S/ 200.00
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Ingenieros colegiados: S/ 250.00
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Externos: S/ 300.00
+                      </p> 
+                       
+                     <div class="text-center mt-2">
+                      <button class="bg-yellow-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                        
+                        <a href="https://drive.google.com/uc?export=download&amp;id=1b_XOe3_Cz7OIQ0CHl1XsB7OSLw8-zVLJ" target="_blank"
+                    class="btn btn-danger btn-lg" role="button" rel="noopener noreferrer">Adquirir<i class="fa fa-external-link"></i></a>
+                      </button>
+                       
+                    </div>
+                    </div>
+                  </div>
+              
+                  <div class="flex flex-wrap">
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+                      <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+                        style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                        <img src="../images/portada/alquiler/img7.webp" class="w-full" alt="" />
+                        <a href="#!">
+                          <div
+                            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                        </div>
+            
+            
+                    </div>
+              
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
+                      <h3 class="text-2xl font-bold mb-4">ALQUILER DE AUDITORIO No. 01 – PRIMER PISO (JULIACA).</h3>
+                      <div class="text-red-600 text-sm mb-4 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        INCLUYE:
+                      </div>
+                      <p class="text-gray-500 ">
+                        82 sillas individuales, con tabla de apuntes cada una (fijas)
+                      </p>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> 82 sillas individuales, con tabla de apuntes cada una (fijas)
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Equipo multimedia (Proyector y Ecran automático)
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Podio
+                      </p>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Un micro
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Sistema de sonido
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> 3 mesas rectangulares
+                      </p>    
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>Internet (Wifi)
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Servicios Higiénicos
+                      </p>  
+                      
+                      
+                      
+                      <div class="text-green-700 text-sm mb-2 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        COSTOS:
+                      </div>
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Ingenieros habilitados: S/ 200.00
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Ingenieros colegiados: S/ 250.00
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg> Externos: S/ 300.00
+                      </p>    
+                    
+                      <div class="text-center m-2">
+                        <button class="bg-yellow-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                          <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                          
+                          <a href="https://drive.google.com/uc?export=download&amp;id=1b_XOe3_Cz7OIQ0CHl1XsB7OSLw8-zVLJ" target="_blank"
+                      class="btn btn-danger btn-lg" role="button" rel="noopener noreferrer">Adquirir<i class="fa fa-external-link"></i></a>
+                        </button>
+                         
+                      </div>
+                      
+                      
+                    </div>
+            
+                    <div class="flex flex-wrap lg:flex-row-reverse mb-12 mt-10 ">
+                        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+                          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+                            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img src="../images/portada/alquiler/img6.webp" class="w-full" alt="Louvre" />
+                            <a href="#!">
+                            <div
+                              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                      </div>
+                    
+            
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
+                      <h3 class="text-2xl font-bold mb-4">ALQUILER DE LABORATORIO DE CÓMPUTO – TERCER PISO (PUNO).</h3>
+                      <div class="text-red-600 text-sm mb-4 flex items-center font-medium pt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        INCLUYE:
+                      </div>
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  15 computadoras con acceso a internet
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Proyector multimedia
+                      </p>  
+                       <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Internet (Wifi)
+                      </p>  
+                      <p class="flex items-center">
+                        <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                          </path>
+                        </svg>  Servicios Higiénicos
+                      </p>    
+                     
+                    
+                      <div class="text-green-700 text-sm mb-2 flex items-center font-medium pt-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+                        
+                          <path fill="currentColor"
+                            d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                        </svg>
+                        COSTOS:
+                      </div>
+            
+                          <p class="flex items-center">
+                              <svg class="w-4 h-5 mr-2 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                </path>
+                              </svg>A tratar (OTS)
+                            </p>             
+                           
+              
+                    
+                  </div>
+                </section>
+
+
+
+              </div>
+
+        </div>
+        <div class="bg-gray-300 py-12 px-12"></div>
+    </div>
+
+
+     <!-- Barra baja general -->
+
+     <footer class="relative bg-neutral-900 pt-8 pb-6">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 text-gray-200">
+          <div class="flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4">
+              <h4 class="text-3xl font-semibold">Ubícanos</h4>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200 py-1">
+                <i class="lg:text-white text-white fa-solid fa-location-dot text-lg leading-lg mr-2"></i>Jr. Mariano H. Cornejo N° 130 - Puno
+              </h5>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200">
+                <i class="lg:text-gray-300 text-gray-500 fa-solid fa-calendar-days text-lg leading-lg mr-2"></i>Lunes a Viernes: 9:00 am - 1:00 pm | 2:00 pm - 6:00 pm
+              </h5>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200">
+                Sábados: 9:00 am – 12:00 pm
+              </h5>
+              <div class="mt-6">
+                <button
+                  class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-twitter"></i></button
+                ><button
+                  class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-facebook-square"></i></button
+                ><button
+                  class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-dribbble"></i></button
+                ><button
+                  class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full lg:w-4/12 px-4 ml-auto">
+                  <span
+                    class="block uppercase text-gray-200 text-sm font-semibold mb-2"
+                    >Contáctanos</span
+                  >
+                  <ul class="list-unstyled">
+                    <a>Administración</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation"
+                        >@cipcdpuno.adm@gmail.com</a
+                      >
+                    </li>
+                    <a>Secretaria</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://blog.creative-tim.com"
+                        >@secretaria.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                    <a>Tesorería</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.github.com/creativetimofficial"
+                        >@tesoreria.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                    <a>Colegiatura</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/bootstrap-themes/free"
+                        >@colegiatura.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-400" />
+          <div
+            class="flex flex-wrap items-center md:justify-between justify-center"
+          >
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-gray-200 font-semibold py-1">
+                © 2022 Todos los derechos reservados
+                <a>
+                Colegio de Ingenieros del Perú - Consejo Departamental Puno</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+
+</html>

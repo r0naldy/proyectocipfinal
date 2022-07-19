@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>CIP CD Puno</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+
+
+    <style>
+      #cards1 {
+          font-family: 'Oxygen', sans-serif;
+      }
+      .navbar {
+            overflow: hidden;
+            background-color: rgb(252, 248, 248);
+            font-family: Arial;
+            }
+
+            /* Links inside the navbar */
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            }
+
+            /* The dropdown container */
+            .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            color: rgb(8, 0, 0);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+            }
+
+            /* Add a red background color to navbar links on hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #b91c1c;
+            color: rgb(255, 255, 255);
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+            background-color: #b91c1c;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+  </style>
+<body>
+    <!-- menu general-->
+    <nav class="bg-slate-700 border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-5">
+            <a href="inicio" class="flex items-center">
+                <img src="../images/portada/logocip2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-white text-xl font-semibold whitespace-nowrap dark:text-white">CIP CD PUNO</span>
+            </a>
+            <div class="flex items-center">
+                <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-50 dark:text-white hover:underline"><i
+                    class="lg:text-gray-300 text-gray-500 fa-solid fa-phone text-lg leading-lg mr-2"
+                  ></i>(051) 368694</a>
+                  <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-50 dark:text-white hover:underline"><i
+                    class="lg:text-gray-300 text-gray-500 fa-solid fa-location-dot text-lg leading-lg mr-2"
+                  ></i>JR. MARIANO H. CORNEJO 1304</a>
+                  <button
+                  class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                  type="button"
+                  style="transition: all 0.15s ease 0s;"
+                >
+                  <i class="fas fa-arrow-alt-circle-down"></i> Ingresar
+                </button>
+                
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-gray-50 dark:bg-gray-700 ">
+        <div class="max-w-screen-xl px-4 mx-auto md:px-6">
+            <div class="flex items-center navbar">
+                <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium py-3">
+                    <li>
+                        <a href="../" class="text-gray-900 dark:text-white py-2 px-3 hover:text-white hover:bg-red-700 " aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Institucional
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada1">Reseña histórica</a>
+                              <a href="portada2">Mision y Visión</a>
+                              <a href="#">Documentos normativos</a>
+                              <a href="#">Comision electoral departamental</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Representantes
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada3">Consejo departamental</a>
+                              <a href="portada4">Asamblea departamental</a>
+                              <a href="portada5">Comite provicial San Román</a>
+                              <a href="#">Capitulos</a>
+                              <a href="portada6">Decanos pasados</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Tramites
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="portada7">Tramite colegiatura ordinaria</a>
+                              <a href="portada8">Certificado habilidad</a>
+                              <a href="../login">Busqueda colegiado</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Servicios
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="../login">Cip Virtual</a>
+                              <a href="portada10">ISS Instituto de servicios sociales</a>
+                              <a href="portada11">Alquile ambientes del cip</a>
+                              <a href="portada12">Club del ingeniero</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Institucional
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Eventos pasados</a>
+                              <a href="#">Noticias</a>
+                              <a href="#">Bolsa de trabajo</a>
+                              <a href="#">Videos</a>
+                              <a href="#">Galeria fotos</a>
+                              <a href="#">Ceremonias</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li>    
+                        <a href="#" class="text-gray-900 dark:text-white py-2 px-3 hover:text-white hover:bg-red-700 ">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+<!-- Direccion de pag -->
+  </div>
+  <div class="bg-slate-700">
+  <div class="container mx-auto py-3 px-12 bg-slate-700">
+      
+      <a class="mr-5 font-semibold text-white hover:text-gray-900" href="">Inicio</a><i class="fa-solid fa-arrow-right-long text-white mr-5"></i><a class="mr-5 font-semibold text-white hover:text-gray-900" href="">Tramite</a><i class="fa-solid fa-arrow-right-long text-white mr-5"></i> <a class="mr-5 font-semibold text-white">Tramite colegiatura ordinaria</a>
+
+  </div>
+  </div>
+<!-- Espacio en blanco -->
+    <div class=" mx-auto py-5 px-12 bg-gray-300">
+
+    </div>
+    <!-- Contenido -->
+    <div class="bg-gray-300">
+        <div class="container mx-auto bg-white rounded-lg py-12 px-12">
+            
+            <div>
+    <!-- Section: Design Block -->
+    <section class="">
+  
+      <div class="px-6 lg:my-12 md:px-12 text-gray-800 text-center lg:text-left">
+        <div class="container mx-auto xl:px-32">
+          <div class="grid pb-10 lg:grid-cols-2 gap-12 flex items-center">
+            <div class="mt-12 lg:mt-0">
+              <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">ISS Instituto de Servicios Sociales <br /><span class="text-green-700">Buscamos tu salud</span></h1>
+            </div>
+            <div class="mb-12 mt-10 lg:mb-0">
+              <img
+                src="../images/portada/iss/img1.jpg"
+                class="w-full rounded-lg shadow-lg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Contai-->
+
+  <!--Section: information-->
+    
+  <div class="container  px-6 mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class=" text-gray-800  ">
+      
+      <div class="flex flex-wrap mb-12  ">
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0 pb-15">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg "
+            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="../images/portada/iss/img4.jpg" class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 ">
+          <h3 class="text-2xl font-bold mb-4">¿QUE ES EL INSTITUTO DE SERVICIOS SOCIALES?</h3>
+          <div class="text-red-600 text-sm mb-4 flex items-center font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-4 h-4 mr-2">
+              <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+              <path fill="currentColor"
+                d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm160 215.5v6.93c0 5.87-3.32 11.24-8.57 13.86l-15.39 7.7a15.485 15.485 0 0 1-15.53-.97l-18.21-12.14a15.52 15.52 0 0 0-13.5-1.81l-2.65.88c-9.7 3.23-13.66 14.79-7.99 23.3l13.24 19.86c2.87 4.31 7.71 6.9 12.89 6.9h8.21c8.56 0 15.5 6.94 15.5 15.5v11.34c0 3.35-1.09 6.62-3.1 9.3l-18.74 24.98c-1.42 1.9-2.39 4.1-2.83 6.43l-4.3 22.83c-.62 3.29-2.29 6.29-4.76 8.56a159.608 159.608 0 0 0-25 29.16l-13.03 19.55a27.756 27.756 0 0 1-23.09 12.36c-10.51 0-20.12-5.94-24.82-15.34a78.902 78.902 0 0 1-8.33-35.29V367.5c0-8.56-6.94-15.5-15.5-15.5h-25.88c-14.49 0-28.38-5.76-38.63-16a54.659 54.659 0 0 1-16-38.63v-14.06c0-17.19 8.1-33.38 21.85-43.7l27.58-20.69a54.663 54.663 0 0 1 32.78-10.93h.89c8.48 0 16.85 1.97 24.43 5.77l14.72 7.36c3.68 1.84 7.93 2.14 11.83.84l47.31-15.77c6.33-2.11 10.6-8.03 10.6-14.7 0-8.56-6.94-15.5-15.5-15.5h-10.09c-4.11 0-8.05-1.63-10.96-4.54l-6.92-6.92a15.493 15.493 0 0 0-10.96-4.54H199.5c-8.56 0-15.5-6.94-15.5-15.5v-4.4c0-7.11 4.84-13.31 11.74-15.04l14.45-3.61c3.74-.94 7-3.23 9.14-6.44l8.08-12.11c2.87-4.31 7.71-6.9 12.89-6.9h24.21c8.56 0 15.5-6.94 15.5-15.5v-21.7C359.23 71.63 422.86 131.02 441.93 208H423.5c-8.56 0-15.5 6.94-15.5 15.5z" />
+            </svg>
+            ISS-CIP
+          </div>
+         
+          <p class="text-gray-500 ">
+            El Instituto de Servicios Sociales, cuya denominación abreviada es ISS-CIP, 
+            en un órgano del Colegio de Ingenieros del Perú encargado de brindar servicios para el mayor bienestar de sus colegiados habilitados y sus familiares directos. Dentro de los servicios que puede brindar se indican los siguientes: Mutual, previsión, seguridad social, vivienda, recreación, y otros servicios similares.
+          </p>
+          <div class="text-center mt-6">
+            <button class="bg-yellow-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+              
+              <a href="https://drive.google.com/uc?export=download&id=1Uhf-L7j8647w03r8s81sshWiSWi9mD_P" target="_blank"
+          class="btn btn-danger btn-lg" role="button" rel="noopener noreferrer">Dowloand<i class="fa fa-external-link"></i></a>
+            </button>
+            <a href="https://drive.google.com/uc?export=download&id=1Uhf-L7j8647w03r8s81sshWiSWi9mD_P" target="_blank"
+          class="btn btn-danger btn-lg text-red-600 font-bold" role="button" rel="noopener noreferrer">Reglamento Modificado Y Aprobado en Congreso Nacional <i class="fa fa-external-link"></i></a>
+          </div>
+          
+        </div>
+      </div>
+  
+      <div class="flex flex-wrap lg:flex-row-reverse mb-12 ">
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="../images/portada/iss/img5.webp" class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 ">
+          <h3 class="text-2xl font-bold mb-4 ">¿QUIENES INTEGRAN EL ISS-CIP?</h3>
+          <div class="text-blue-600 text-sm mb-4 flex items-center font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2">
+              <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+              <path fill="currentColor"
+                d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+            </svg>
+            Importante Saber
+          </div>
+          <p class="text-gray-500 ">
+            Integran el ISS-CIP todos los ingenieros colegiados y habilitados del Colegio de
+             Ingenieros del Perú. Es importante que usted colega tenga conocimiento que la subsistencia organizacional y económica del ISS-CIP, asi como el cumplimiento de sus objetivos, se sustenta en los S/. 2.50 nuevos soles que los ingenieros habilitados aportan dentro del pago de su cuota social mensual a su Consejo Departamental correspondiente. Cabe indicar que los ingenieros VITALICIOS no están exonerados de aportar este monto.
+          </p>
+          <p class="text-gray-500 mt-5">
+            Es requisito indispensable que el ingeniero debe estar al día con sus aportes al ISS-CIP para tener el derecho de acceder a los servicios que brinda el ISS-CIP. El máximo plazo permisible de deuda es de tres meses (Art, 3.02 del Estatuto del CIP). Los ingenieros que tengan una deuda mayor a tres meses (tres meses un día) no tendrán derecho a los servicios que brinda el ISS-CIP.
+          </p>
+        </div>
+      </div>
+  
+      <div class="flex flex-wrap">
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="../images/portada/iss/img2.jpg" class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
+          <h3 class="text-2xl font-bold mb-4">TRAMITE POR ASIGNACION POR FALLECIMIENTO</h3>
+          <div class="text-yellow-600 text-sm mb-4 flex items-center font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-4 h-4 mr-2">
+              <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+              <path fill="currentColor"
+                d="M608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 176c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 48h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z" />
+            </svg>
+            Tramite
+          </div>
+          <p class="text-gray-500 mb-6 text-sm">
+            Publicado <u>01.01.2011</u> by
+            <a href="#!">CIP CD Puno</a>
+          </p>
+          <p class="text-gray-500">
+            El trámite por Asignación por fallecimiento e invalidez se debe realizar a través del Consejo Departamental donde se encuentra inscrito el ingeniero.
+          </p>
+          <p class="text-gray-500 mt-5">
+            Es muy importante que usted ingeniero redacte su Carta Declaratoria de
+            Beneficiarios para la Asignación por fallecimiento del Titular; para lo cual podrá recabar el Formato correspondiente en el Consejo Departamental al que corresponde o podrá imprimirla desde esta página web, llenarla, legalizarla notarialmente y entregarla en la sede de su Consejo Departamental.
+          </p>
+          <div class="text-center mt-10">
+            <button class="bg-yellow-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+              
+              <a href="https://drive.google.com/uc?export=download&amp;id=1b_XOe3_Cz7OIQ0CHl1XsB7OSLw8-zVLJ" target="_blank"
+          class="btn btn-danger btn-lg" role="button" rel="noopener noreferrer">Dowloand<i class="fa fa-external-link"></i></a>
+            </button>
+            <a href="https://drive.google.com/uc?export=download&amp;id=1b_XOe3_Cz7OIQ0CHl1XsB7OSLw8-zVLJ" target="_blank"
+          class="btn btn-danger btn-lg text-red-600 font-bold " role="button" rel="noopener noreferrer">Carta Declaratoria de Beneficiarios <i class="fa fa-external-link"></i></a>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+    
+
+            <!-- component -->
+
+
+          <link
+          href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+          rel="stylesheet">
+
+          <style>
+          .table {
+            border-spacing: 0 15px;
+          }
+
+          i {
+            font-size: 1rem !important;
+          }
+
+          .table tr {
+            border-radius: 20px;
+          }
+
+          tr td:nth-child(n+5),
+          tr th:nth-child(n+5) {
+            border-radius: 0 .625rem .625rem 0;
+          }
+
+          tr td:nth-child(1),
+          tr th:nth-child(1) {
+            border-radius: .625rem 0 0 .625rem;
+          }
+          </style>
+
+
+    <h3 class="text-2xl font-bold mb-4 text-center pt-20 text-red-600"> 
+      Servicios que actualmente brinda el ISS-CIP a los ingenieros habilitados.</h3>
+      <div class="container mx-auto flex flex-wrap flex items-center  justify-center  ">
+      
+        <div class="flex items-center justify-center p-3 ">
+      
+          <div class="col-span-12">
+            <h3 class="text-2xl font-bold mb-4 text-center ">Asignación por fallecimiento e invalidez </h3>
+            <div class="overflow-auto lg:overflow-visible ">
+              <table class="table text-gray-400 border-separate space-y-6 text-sm">
+                <thead class="bg-gray-800 text-white">
+                  <tr>
+                    <th class="p-3">Categoria</th>
+          
+                    <th class="p-3 text-left pl-">Monto</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+          
+                  <tr class="bg-gray-800 text-white">
+                    <td class="p-3">
+                      <div class="flex align-items-center">
+                        <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                        <div class="ml-3">
+                          
+                          <div class="text-gray-500 text-center pt-4 text-white">
+                            Asignación por Fallecimiento de Titular</div>
+                        </div>
+                      </div>
+                    </td>
+                    
+                
+                    <td class="p-3">
+                      <span class="bg-green-700 text-gray-50 rounded-md mr-2">S/. 5,000.00</span>
+                    </td>
+                    
+                  </tr>
+                  <tr class="bg-gray-800 text-white">
+                    <td class="p-3">
+                      <div class="flex align-items-center">
+                        <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                        <div class="ml-3">
+                          
+                          <div class="text-gray-500 text-center pt-4 text-white">
+                            Asignación por Fallecimiento de Cónyuge</div>
+                        </div>
+                      </div>
+                    </td>
+                    
+                
+                    <td class="p-3">
+                      <span class="bg-green-700 text-gray-50 rounded-md mr-2">S/. 1,600.00</span>
+                    </td>
+                    
+                  </tr>
+                  <tr class="bg-gray-800 text-white">
+                    <td class="p-3">
+                      <div class="flex align-items-center">
+                        <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                        <div class="ml-3">
+                          
+                          <div class="text-gray-500 text-center pt-4 text-white">
+                            Asignación por Fallecimiento de Hijos Menores</div>
+                        </div>
+                      </div>
+                    </td>
+                    
+                
+                    <td class="p-3">
+                      <span class="bg-green-700 text-gray-50 rounded-md mr-2">	S/. 700.00</span>
+                    </td>
+                    
+                  </tr>
+                  <tr class="bg-gray-800 text-white">
+                    <td class="p-3">
+                      <div class="flex align-items-center">
+                        <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                        <div class="ml-3">
+                          
+                          <div class="text-gray-500 text-center pt-4 text-white">
+                            Asignación por Invalidez Permanente de Titular</div>
+                        </div>
+                      </div>
+                    </td>
+                    
+                
+                    <td class="p-3">
+                      <span class="bg-green-700 text-gray-50 rounded-md mr-2">	S/. 2,400.00</span>
+                    </td>
+                    
+                  </tr>
+                  <tr class="bg-gray-800 text-white">
+                    <td class="p-3">
+                      <div class="flex align-items-center">
+                        <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                        <div class="ml-3">
+                          
+                          <div class="text-gray-500 text-center pt-4 text-white">
+                            Asignación por Apoyo Solidario de Titular</div>
+                        </div>
+                      </div>
+                    </td>
+                    
+                
+                    <td class="p-3">
+                      <span class="bg-green-700 text-gray-50 rounded-md mr-2">	S/. 1,500.00</span>
+                    </td>
+                    
+                  </tr>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+
+            <!-- table 2 -->  
+
+          <div class="flex items-center justify-center ">
+            <div class="col-span-12">
+              <h3 class="text-2xl font-bold mb-4 text-center  ">
+                Declaración Jurada Solicitud de Asignación por Fallecimiento del Titular</h3>
+              <div class="overflow-auto lg:overflow-visible ">
+                <table class="table text-gray-400 border-separate space-y-6 text-sm">
+                  <thead class="bg-gray-800 text-white">
+                    <tr>
+                      <th class="p-3">Categoria</th>
+                      <th class="p-3 text-left">Tipo</th>
+              
+                      <th class="p-3 text-left">Estado</th>
+                      <th class="p-3 text-left ">Descargar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+            
+                    <tr class="bg-gray-800 text-white">
+                      <td class="p-3">
+                        <div class="flex align-items-center">
+                          <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                          <div class="ml-3">
+                            
+                            <div class="text-gray-500 text-center pt-4 text-white">Declaración Jurada Solicitud de Asignación por Fallecimiento del Titular</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-6">
+                        pdf
+                      </td>
+                  
+                      <td class="p-3">
+                        <span class="bg-green-700 text-gray-50 rounded-md px-2">Activo</span>
+                      </td>
+                      <td class="p-3 ">
+                        <a href="https://drive.google.com/uc?export=download&id=1PNbyoJU7JBLASyR1odXWYaeJVt5lk47V" class="text-gray-400 hover:text-gray-100 mr-2">
+                          <i class="material-icons-outlined text-base mx-5 text-yellow-500">visibility</i>
+                        </a>
+                        
+                      </td>
+                    </tr>
+            
+                    <tr class="bg-gray-800 ">
+                      <td class="p-3">
+                        <div class="flex align-items-center">
+                          <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                          <div class="ml-3">
+                            
+                            <div class="text-gray-500 text-center pt-4 text-white">Declaración Jurada Solicitud de Asignación por Fallecimiento del Cónyuge</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-6">
+                        pdf
+                      </td>
+                  
+                      <td class="p-3">
+                        <span class="bg-green-700 text-gray-50 rounded-md px-2">Activo</span>
+                      </td>
+                      <td class="p-3 ">
+                        <a href="https://drive.google.com/uc?export=download&id=1fESCWWJeuX-JW7Z9jodpNjaT9A2dU36W" class="text-gray-400 hover:text-gray-100 mr-2">
+                          <i class="material-icons-outlined text-base mx-5 text-yellow-500">visibility</i>
+                        </a>
+                        
+                      </td>
+                    </tr>
+            
+                    <tr class="bg-gray-800">
+                      <td class="p-3">
+                        <div class="flex align-items-center">
+                          <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                          <div class="ml-3">
+                            
+                            <div class="text-gray-500 text-center pt-4 text-white">Declaración Jurada Solicitud de Asignación por Fallecimiento de Hijos Menores de 18 años</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-6">
+                        pdf
+                      </td>
+                  
+                      <td class="p-3">
+                        <span class="bg-green-700 text-gray-50 rounded-md px-2">Activo</span>
+                      </td>
+                      <td class="p-3 ">
+                        <a href="https://drive.google.com/uc?export=download&id=15zdNmuS30nYr3mBCrpT9ozOvL5TD_hKm" class="text-gray-400 hover:text-gray-100 mr-2">
+                          <i class="material-icons-outlined text-base mx-5 text-yellow-500">visibility</i>
+                        </a>
+                        
+                      </td>
+                    </tr>
+            
+                    <tr class="bg-gray-800">
+                      <td class="p-3">
+                        <div class="flex align-items-center">
+                          <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                          <div class="ml-3">
+                            
+                            <div class="text-gray-500 text-center pt-4 text-white">Declaración Jurada Solicitud de Asignación por Invalidez Permanente del Titular</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-6">
+                        pdf
+                      </td>
+                  
+                      <td class="p-3">
+                        <span class="bg-green-700 text-gray-50 rounded-md px-2">Activo</span>
+                      </td>
+                      <td class="p-3 ">
+                        <a href="https://drive.google.com/uc?export=download&id=1sgk24HWR-xLC89UBQka1YSz72YYh9JnS" class="text-gray-400 hover:text-gray-100 mr-2">
+                          <i class="material-icons-outlined text-base mx-5 text-yellow-500">visibility</i>
+                        </a>
+                        
+                      </td>
+                    </tr>
+                    
+                    <tr class="bg-gray-800">
+                      <td class="p-3">
+                        <div class="flex align-items-center">
+                          <img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
+                          <div class="ml-3">
+                            
+                            <div class="text-gray-500 text-center pt-4 text-white">Declaración Jurada Solicitud de Apoyo Solidario del Titular</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="p-6">
+                        pdf
+                      </td>
+                  
+                      <td class="p-3">
+                        <span class="bg-green-700 text-gray-50 rounded-md px-2">Activo</span>
+                      </td>
+                      <td class="p-3 ">
+                        <a href="https://drive.google.com/uc?export=download&id=16kiy0E1adYY8NoJcUNCTt7TYH2ELvFli" class="text-gray-400 hover:text-gray-100 mr-2">
+                          <i class="material-icons-outlined text-base mx-5 text-yellow-500">visibility</i>
+                        </a>
+                        
+                      </td>
+                    </tr>
+            
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            </div>
+      </div>
+      </div>
+
+      <div class="container mx-auto pt-10 ">
+        <h3 class="text-3xl font-bold mb-4 text-center">COMUNICADOS</h3>
+      
+      </div>
+      <div class="container mx-auto flex align-items-center  justify-center pt-10 ">
+          <img src="../images/portada/iss/img3.jpg" alt="">
+
+      </div>
+
+
+        </div>
+        <div class="bg-gray-300 py-8 px-12"></div>
+    </div>
+
+
+     <!-- Barra baja general -->
+
+     <footer class="relative bg-neutral-900 pt-8 pb-6">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 text-gray-200">
+          <div class="flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4">
+              <h4 class="text-3xl font-semibold">Ubícanos</h4>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200 py-1">
+                <i class="lg:text-white text-white fa-solid fa-location-dot text-lg leading-lg mr-2"></i>Jr. Mariano H. Cornejo N° 130 - Puno
+              </h5>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200">
+                <i class="lg:text-gray-300 text-gray-500 fa-solid fa-calendar-days text-lg leading-lg mr-2"></i>Lunes a Viernes: 9:00 am - 1:00 pm | 2:00 pm - 6:00 pm
+              </h5>
+              <h5 class="text-lg mt-0 mb-2 text-gray-200">
+                Sábados: 9:00 am – 12:00 pm
+              </h5>
+              <div class="mt-6">
+                <button
+                  class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-twitter"></i></button
+                ><button
+                  class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-facebook-square"></i></button
+                ><button
+                  class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-dribbble"></i></button
+                ><button
+                  class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i class="flex fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full lg:w-4/12 px-4 ml-auto">
+                  <span
+                    class="block uppercase text-gray-200 text-sm font-semibold mb-2"
+                    >Contáctanos</span
+                  >
+                  <ul class="list-unstyled">
+                    <a>Administración</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation"
+                        >@cipcdpuno.adm@gmail.com</a
+                      >
+                    </li>
+                    <a>Secretaria</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://blog.creative-tim.com"
+                        >@secretaria.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                    <a>Tesorería</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.github.com/creativetimofficial"
+                        >@tesoreria.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                    <a>Colegiatura</a>
+                    <li>
+                      <a
+                        class="text-gray-200 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/bootstrap-themes/free"
+                        >@colegiatura.cdpuno@cip.org.pe</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-400" />
+          <div
+            class="flex flex-wrap items-center md:justify-between justify-center"
+          >
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-gray-200 font-semibold py-1">
+                © 2022 Todos los derechos reservados
+                <a>
+                Colegio de Ingenieros del Perú - Consejo Departamental Puno</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+
+</html>

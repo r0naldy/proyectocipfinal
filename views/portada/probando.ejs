@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logocip2.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="LEFT4CODE">
+        <title>Colegio de ingenieros del peru - Puno</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="app"  >
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-8" src="dist/images/logocip2.png">
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="inicio.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title">Inicio </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="registrar_administrador.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="book-open"></i> </div>
+                        <div class="menu__title"> Registrar cuenta </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="editar_cuenta.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="settings"></i> </div>
+                        <div class="menu__title"> Editar cuentas </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="certificado.html" class="menu ">
+                        <div class="menu__icon"> <i data-feather="archive"></i> </div>
+                        <div class="menu__title"> Solicitudes colegiacion </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="layers"></i> </div>
+                        <div class="menu__title"> Capacitaciones <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="Registrarcapacitacion.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="layers"></i> </div>
+                                <div class="menu__title"> Registrar Capacitaciones </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Lista capacitaciones.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="layers"></i> </div>
+                                <div class="menu__title"> listar capacitaciones </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Participantes.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="layers"></i> </div>
+                                <div class="menu__title"> Participantes </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Listar Tramite.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="database"></i> </div>
+                        <div class="menu__title"> Tramites </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="aperture"></i> </div>
+                        <div class="menu__title"> Servicios <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="CrudLocales.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="aperture"></i> </div>
+                                <div class="menu__title"> Registrar alquiler </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Servicio - Alquiler.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="aperture"></i> </div>
+                                <div class="menu__title"> Ver alquilees</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Evento.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="aperture"></i> </div>
+                                <div class="menu__title"> Registrar evento</div> 
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="folder"></i> </div>
+                        <div class="menu__title"> Certificados <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="Solicitud de certificados.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="folder"></i> </div>
+                                <div class="menu__title"> Solicitudes de certificados </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="menu">
+                                <div class="menu__icon"> <i data-feather="folder"></i> </div>
+                                <div class="menu__title"> Agregar modelo</div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="CrudPagos.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="shopping-cart"></i> </div>
+                        <div class="menu__title"> Deudas </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-inbox.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="clipboard"></i> </div>
+                        <div class="menu__title"> Documentación </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-file-manager.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="log-out"></i> </div>
+                        <div class="menu__title"> Cerrar sesión </div>
+                    </a>
+                </li>
+            
+                
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-8" src="dist/images/logocip2.png">
+                    <span class="hidden xl:block text-white text-lg ml-3"> CIP <span class="font-medium">Puno</span> </span>
+                </a>
+                <div class="side-nav__devider my-6"></div>
+                <ul>
+                    <li>
+                        <a href="inicio.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Inicio </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registrar_administrador.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="book-open"></i> </div>
+                            <div class="side-menu__title"> Registrar cuenta </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="editar_cuenta.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="settings"></i> </div>
+                            <div class="side-menu__title"> Editar cuentas </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="certificado.html" class="side-menu ">
+                            <div class="side-menu__icon"> <i data-feather="archive"></i> </div>
+                            <div class="side-menu__title"> Solicitudes colegiacion </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="layers"></i> </div>
+                            <div class="side-menu__title"> Capacitaciones <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="Registrarcapacitacion.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="layers"></i> </div>
+                                    <div class="side-menu__title"> Registrar Capacitaciones </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Lista capacitaciones.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="layers"></i> </div>
+                                    <div class="side-menu__title"> listar capacitaciones </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Participantes.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="layers"></i> </div>
+                                    <div class="side-menu__title"> Participantes </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="Listar Tramite.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="database"></i> </div>
+                            <div class="side-menu__title"> Tramites </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="aperture"></i> </div>
+                            <div class="side-menu__title"> Servicios <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="CrudLocales.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="aperture"></i> </div>
+                                    <div class="side-menu__title"> Registrar alquiler </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Servicio - Alquiler.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="aperture"></i> </div>
+                                    <div class="side-menu__title"> Ver alquilees</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Evento.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="aperture"></i> </div>
+                                    <div class="side-menu__title"> Registrar evento</div> 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="folder"></i> </div>
+                            <div class="side-menu__title"> Certificados <i data-feather="chevron-down" class="side-menu__sub-icon"></i> </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="Solicitud de certificados.html" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="folder"></i> </div>
+                                    <div class="side-menu__title"> Solicitudes de certificados </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="side-menu">
+                                    <div class="side-menu__icon"> <i data-feather="folder"></i> </div>
+                                    <div class="side-menu__title"> Agregar modelo</div>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="CrudPagos.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="shopping-cart"></i> </div>
+                            <div class="side-menu__title"> Deudas </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-inbox.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="clipboard"></i> </div>
+                            <div class="side-menu__title"> Documentación </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-file-manager.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="log-out"></i> </div>
+                            <div class="side-menu__title"> Cerrar sesión </div>
+                        </a>
+                    </li>
+                
+                    
+                    
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Sistema</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">Inicio</a> </div>
+                    <!-- END: Breadcrumb -->
+                   
+                    <!-- BEGIN: Account Menu -->
+                    <div class="intro-x dropdown w-8 h-8 relative">
+                        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
+                            <img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-6.jpg">
+                        </div>
+                        <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
+                            <div class="dropdown-box__content box bg-theme-38 text-white">
+                                <div class="p-4 border-b border-theme-40">
+                                    <div class="font-medium">Carlos carlin</div>
+                                    <div class="text-xs text-theme-41">Secretario</div>
+                                </div>
+                                <div class="p-2">
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Mi perfil </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="edit" class="w-4 h-4 mr-2"></i> Agregar cuenta </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Cambiar contraseña </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Ayuda </a>
+                                </div>
+                                <div class="p-2 border-t border-theme-40">
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Cerrar sesión </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Account Menu -->
+                </div>
+                <!-- END: Top Bar -->
+                <div class="intro-y flex items-center mt-8">
+                    <h2 class="text-lg font-medium mr-auto">
+                        Perfil administrativo
+                    </h2>
+                </div>
+                <div class="container intro-y box px-5 pt-5 mt-5 pb-2">
+                    <div class="slider mx-auto"> <div class="h-64 px-2"> <div class="h-full image-fit rounded-md overflow-hidden"> <img alt="Midone Tailwind HTML Admin Template" src="dist/images/bg-fondo.webp" /> </div> </div>  </div> 
+                </div>
+                <!-- BEGIN: Profile Info -->
+                <div class="intro-y box px-5 pt-5 mt-5">
+                     
+                    <div class="flex flex-col lg:flex-row border-b border-gray-200 pb-5 -mx-5">
+                       
+                        <div class="flex flex-1 px-5 items-center justify-center lg:justify-start">
+                            
+                            <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none lg:w-32 lg:h-32 image-fit relative">
+                                <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                <div class="absolute mb-1 mr-1 flex items-center justify-center bottom-0 right-0 bg-theme-1 rounded-full p-2"> <i class="w-4 h-4 text-white" data-feather="camera"></i> </div>
+                            </div>
+                            <div class="ml-5">
+                                <div class="w-24 sm:w-40 truncate sm:whitespace-normal font-medium text-lg">Carlos Carlin</div>
+                                <div class="text-gray-600">Secretario</div>
+                            </div>
+                        </div>
+                        <div class="flex mt-6 lg:mt-0 items-center lg:items-start flex-1 flex-col justify-center text-gray-600 px-5 border-l border-r border-gray-200 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class="truncate sm:whitespace-normal flex items-center"> <i data-feather="mail" class="w-4 h-4 mr-2"></i> miemail@gmail.com </div>
+                            <div class="truncate sm:whitespace-normal flex items-center"> <i data-feather="phone" class="w-4 h-4 mr-2"></i> 987564231 </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                <!-- END: Profile Info -->
+                <div class="intro-y tab-content mt-5">
+                    <div class="tab-content__pane active" id="dashboard">
+                        <div class="grid grid-cols-12 gap-6">
+                            <!-- BEGIN: Top Categories -->
+                            <div class="intro-y box col-span-12 lg:col-span-6">
+                                <div class="flex items-center p-5 border-b border-gray-200">
+                                    <h2 class="font-medium text-base mr-auto">
+                                        Información general del sistema
+                                    </h2>
+                                    
+                                </div>
+                                <div class="p-5">
+                                    <div class="flex flex-col sm:flex-row">
+                                        <div class="mr-auto">
+                                            <a class="font-medium">Usuarios registrados</a> 
+                                            <div class="text-gray-600 mt-1">Total de usuarios registrados en el sistema</div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-32 -ml-2 sm:ml-0 mt-5 mr-auto sm:mr-5">
+                                                <canvas class="simple-line-chart-1" data-random="true" height="20"></canvas>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="font-medium">6.2k</div>
+                                                <div class="bg-theme-18 text-theme-9 rounded px-2 mt-1">+100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row mt-5">
+                                        <div class="mr-auto">
+                                            <a href="" class="font-medium">Usuarios activos</a> 
+                                            <div class="text-gray-600 mt-1">Total de usuarios activos en los ultimos 30 dias</div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-32 -ml-2 sm:ml-0 mt-5 mr-auto sm:mr-5">
+                                                <canvas class="simple-line-chart-1" data-random="true" height="20"></canvas>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="font-medium">2.5k</div>
+                                                <div class="bg-theme-17 text-theme-11 rounded px-2 mt-1">+150</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row mt-5">
+                                        <div class="mr-auto">
+                                            <a href="" class="font-medium">Usuarios inactivos</a> 
+                                            <div class="text-gray-600 mt-1">Total de usuarios inactivos ne los ultimos 30 dias</div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-32 -ml-2 sm:ml-0 mt-5 mr-auto sm:mr-5">
+                                                <canvas class="simple-line-chart-1" data-random="true" height="20"></canvas>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="font-medium">3.4k</div>
+                                                <div class="bg-theme-14 text-theme-10 rounded px-2 mt-1">+150</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Top Categories -->
+                            <!-- BEGIN: Work In Progress -->
+                            <div class="intro-y box col-span-12 lg:col-span-6">
+                                <div class="flex items-center px-5 py-5 sm:py-0 border-b border-gray-200">
+                                    <h2 class="font-medium text-base mr-auto">
+                                        Desarrollo en progreso
+                                    </h2>
+                                    <div class="dropdown relative ml-auto sm:hidden">
+                                        <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                        <div class="nav-tabs dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
+                                            <div class="dropdown-box__content box p-2"> <a href="javascript:;" data-toggle="tab" data-target="#new" class="block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">New</a> <a href="javascript:;" data-toggle="tab" data-target="#last-week" class="block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Last Week</a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-tabs ml-auto hidden sm:flex"> <a data-toggle="tab" data-target="#work-in-progress-new" href="javascript:;" class="py-5 ml-6 active">New</a> <a data-toggle="tab" data-target="#work-in-progress-last-week" href="javascript:;" class="py-5 ml-6">Last Week</a> </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="tab-content">
+                                        <div class="tab-content__pane active" id="work-in-progress-new">
+                                            <div>
+                                                <div class="flex">
+                                                    <div class="text-gray-700 mr-auto">Pendientes a desarrollar</div>
+                                                    <div class="font-medium">20%</div>
+                                                </div>
+                                                <div class="w-full h-1 mt-2 bg-gray-400 rounded-full">
+                                                    <div class="w-1/2 h-full bg-theme-1 rounded-full"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5">
+                                                <div class="flex">
+                                                    <div class="text-gray-700 mr-auto">Objetivos cumplidos</div>
+                                                    <div class="font-medium">2 / <span class="text-gray-600">20</span></div>
+                                                </div>
+                                                <div class="w-full h-1 mt-2 bg-gray-400 rounded-full">
+                                                    <div class="w-1/4 h-full bg-theme-1 rounded-full"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5">
+                                                <div class="flex">
+                                                    <div class="text-gray-700 mr-auto">Objetivos en progreso</div>
+                                                    <div class="font-medium">42</div>
+                                                </div>
+                                                <div class="w-full h-1 mt-2 bg-gray-400 rounded-full">
+                                                    <div class="w-3/4 h-full bg-theme-1 rounded-full"></div>
+                                                </div>
+                                            </div>
+                                            <a href="" class="button w-40 mx-auto justify-center block bg-gray-200 text-gray-600 mt-5">View More Details</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Work In Progress -->
+                            <!-- BEGIN: Daily Sales -->
+                            <div class="intro-y box col-span-12 lg:col-span-6">
+                                <div class="flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
+                                    <h2 class="font-medium text-base mr-auto">
+                                        Daily Sales
+                                    </h2>
+                                    <div class="dropdown relative ml-auto sm:hidden">
+                                        <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                        <div class="dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
+                                            <div class="dropdown-box__content box p-2">
+                                                <a href="javascript:;" class="flex items-center p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="file" class="w-4 h-4 mr-2"></i> Download Excel </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="button border relative flex items-center text-gray-700 hidden sm:flex"> <i data-feather="file" class="w-4 h-4 mr-2"></i> Download Excel </button>
+                                </div>
+                                <div class="p-5">
+                                    <div class="relative flex items-center">
+                                        <div class="w-12 h-12 flex-none image-fit">
+                                            <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                        </div>
+                                        <div class="ml-4 mr-auto">
+                                            <a href="" class="font-medium">Russell Crowe</a> 
+                                            <div class="text-gray-600 mr-5 sm:mr-5">Bootstrap 4 HTML Admin Template</div>
+                                        </div>
+                                        <div class="font-medium text-gray-700">+$19</div>
+                                    </div>
+                                    <div class="relative flex items-center mt-5">
+                                        <div class="w-12 h-12 flex-none image-fit">
+                                            <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-7.jpg">
+                                        </div>
+                                        <div class="ml-4 mr-auto">
+                                            <a href="" class="font-medium">Kevin Spacey</a> 
+                                            <div class="text-gray-600 mr-5 sm:mr-5">Tailwind HTML Admin Template</div>
+                                        </div>
+                                        <div class="font-medium text-gray-700">+$25</div>
+                                    </div>
+                                    <div class="relative flex items-center mt-5">
+                                        <div class="w-12 h-12 flex-none image-fit">
+                                            <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-1.jpg">
+                                        </div>
+                                        <div class="ml-4 mr-auto">
+                                            <a href="" class="font-medium">Tom Cruise</a> 
+                                            <div class="text-gray-600 mr-5 sm:mr-5">Vuejs HTML Admin Template</div>
+                                        </div>
+                                        <div class="font-medium text-gray-700">+$21</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Daily Sales -->
+                            <!-- BEGIN: Latest Tasks -->
+                            <div class="intro-y box col-span-12 lg:col-span-6">
+                                <div class="flex items-center px-5 py-5 sm:py-0 border-b border-gray-200">
+                                    <h2 class="font-medium text-base mr-auto">
+                                        Latest Tasks
+                                    </h2>
+                                    <div class="dropdown relative ml-auto sm:hidden">
+                                        <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                        <div class="nav-tabs dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
+                                            <div class="dropdown-box__content box p-2"> <a href="javascript:;" data-toggle="tab" data-target="#new" class="block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">New</a> <a href="javascript:;" data-toggle="tab" data-target="#last-week" class="block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Last Week</a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-tabs ml-auto hidden sm:flex"> <a data-toggle="tab" data-target="#latest-tasks-new" href="javascript:;" class="py-5 ml-6 active">New</a> <a data-toggle="tab" data-target="#latest-tasks-last-week" href="javascript:;" class="py-5 ml-6">Last Week</a> </div>
+                                </div>
+                                <div class="p-5">
+                                    <div class="tab-content">
+                                        <div class="tab-content__pane active" id="latest-tasks-new">
+                                            <div class="flex items-center">
+                                                <div class="border-l-2 border-theme-1 pl-4">
+                                                    <a href="" class="font-medium">Create New Campaign</a> 
+                                                    <div class="text-gray-600">10:00 AM</div>
+                                                </div>
+                                                <input class="input input--switch ml-auto border" type="checkbox">
+                                            </div>
+                                            <div class="flex items-center mt-5">
+                                                <div class="border-l-2 border-theme-1 pl-4">
+                                                    <a href="" class="font-medium">Meeting With Client</a> 
+                                                    <div class="text-gray-600">02:00 PM</div>
+                                                </div>
+                                                <input class="input input--switch ml-auto border" type="checkbox">
+                                            </div>
+                                            <div class="flex items-center mt-5">
+                                                <div class="border-l-2 border-theme-1 pl-4">
+                                                    <a href="" class="font-medium">Create New Repository</a> 
+                                                    <div class="text-gray-600">04:00 PM</div>
+                                                </div>
+                                                <input class="input input--switch ml-auto border" type="checkbox">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Latest Tasks -->
+                            <!-- BEGIN: General Statistic -->
+                            
+                            <!-- END: General Statistic -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>
